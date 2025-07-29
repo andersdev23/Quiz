@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+                <h1>Hora do Quiz</h1>
+        </header>
+        <main>
+            <div class="div-perguntas">
+                <p><strong>1 - Qual é a capital do Brasil?</strong></p>
+                <div class="div-respostas">
+                    <div class="opcao invalida false">
+                        <input type="radio" name="pergunta1" value="sao paulo" id="p1-op1">
+                        <label for="p1-op1">São Paulo</label>
+                    </div>
+                    <div class="opcao invalida false">
+                        <input type="radio" name="pergunta1" value="rio de janeiro" id="p1-op2">
+                        <label for="p1-op2">Rio de Janeiro</label>
+                    </div>
+                    <div class="opcao valida true">
+                        <input type="radio" name="pergunta1" value="brasilia" id="p1-op3">
+                        <label for="p1-op3">Brasília</label>
+                    </div>
+                    <div class="opcao invalida false">
+                        <input type="radio" name="pergunta1" value="salvador" id="p1-op4">
+                        <label for="p1-op4">Salvador</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-perguntas">
+                <p><strong>2 - Quanto é 523 + 9?</strong></p>
+                <div class="div-respostas">
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta2" value="6" id="p2-op1">
+                        <label for="p2-op1">236</label>
+                    </div>
+                    <div class="opcao true">
+                        <input type="radio" name="pergunta2" value="8" id="p2-op2">
+                        <label for="p2-op2">532</label>
+                    </div>
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta2" value="10" id="p2-op3">
+                        <label for="p2-op3">539</label>
+                    </div>
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta2" value="7" id="p2-op4">
+                        <label for="p2-op4">621</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-perguntas">
+                <p><strong>3 - Qual animal é conhecido como o rei da selva?</strong></p>
+                <div class="div-respostas">
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta3" value="tigre" id="p3-op1">
+                        <label for="p3-op1">Tigre</label>
+                    </div>
+                    <div class="opcao true">
+                        <input type="radio" name="pergunta3" value="leao" id="p3-op2">
+                        <label for="p3-op2">Leão</label>
+                    </div>
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta3" value="elefante" id="p3-op3">
+                        <label for="p3-op3">Elefante</label>
+                    </div>
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta3" value="lobo" id="p3-op4">
+                        <label for="p3-op4">Lobo</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-perguntas">
+                <p><strong>4 - Que cor se forma ao misturar azul e amarelo?</strong></p>
+                <div class="div-respostas">
+                    <div class="opcao true">
+                        <input type="radio" name="pergunta4" value="verde" id="p4-op1">
+                        <label for="p4-op1">Verde</label>
+                    </div>
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta4" value="roxo" id="p4-op2">
+                        <label for="p4-op2">Roxo</label>
+                    </div>
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta4" value="marrom" id="p4-op3">
+                        <label for="p4-op3">Marrom</label>
+                    </div>
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta4" value="laranja" id="p4-op4">
+                        <label for="p4-op4">Laranja</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-perguntas">
+                <p><strong>5 - Em que continente fica o Egito?</strong></p>
+                <div class="div-respostas">
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta5" value="europa" id="p5-op1">
+                        <label for="p5-op1">Europa</label>
+                    </div>
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta5" value="asia" id="p5-op2">
+                        <label for="p5-op2">Ásia</label>
+                    </div>
+                    <div class="opcao true">
+                        <input type="radio" name="pergunta5" value="africa" id="p5-op3">
+                        <label for="p5-op3">África</label>
+                    </div>
+                    <div class="opcao false">
+                        <input type="radio" name="pergunta5" value="america" id="p5-op4">
+                        <label for="p5-op4">América</label>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section>
+            <button onclick="verificarQuestao()">Avaliar</button>
+            <button onclick="refazer()">Refazer</button>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; Todos os direitos reservados a Anderson Alves</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

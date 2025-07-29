@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Audiowide&family=Bitcount+Grid+Single:wght@100..900&family=Comic+Relief:wght@400;700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mrs+Saint+Delafield&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 189, 243, 0.445);
+    flex-direction: column;
+}
+.container{
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0.726));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    width: 60vw;
+}
+header{
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    font-family: Bitcount Grid Single;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+main{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.div-perguntas{
+    background-color: rgba(0, 0, 0, 0.616);
+    backdrop-filter: blur(15px);
+    padding: 30px 5px 5px 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+.opcao{
+    margin: 2px;
+    background-color: rgb(165, 190, 233);
+    padding: 3px;
+    padding-left: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+}
+.opcao:hover{
+    opacity: 0.9;
+}
+.div-perguntas p{
+    font-size: 30px;
+    font-family: sans-serif;
+    background-color: white;
+    padding: 15px;
+    border-top-right-radius: 20px;
+}
+.div-respostas{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.div-respostas input[type='radio']{
+    cursor: pointer;
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: aliceblue;
+    border-radius: 4px;
+    border: 2px solid black;
+    position: relative;
+}
+.div-respostas input[type='radio']:checked:after{
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 9px;
+    border-right: 3px solid black;
+    border-bottom: 2px solid black;
+    left: 6px;
+    bottom: 7px;
+    transform:rotate(40deg)
+    
+}
+.div-respostas label{
+    background-color: transparent;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+section{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    border-top: 2px solid gray;
+}
+section button{
+    background-color: rgb(36, 141, 228);
+    color: white;
+    padding: 6px;
+    cursor: pointer;
+    font-family: sans-serif;
+    border-radius: 8px;
+    width: 100px;
+    font-weight: 700;
+}
+section button:hover{
+    opacity: .9;
+}
+.aviso-questao-errada{
+    background-color: transparent;
+    border: 1px dotted red;
+    color: red;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+.aviso-questao-certa{
+    background-color: transparent;
+    border: 1px dotted greenyellow;
+    color: rgb(120, 226, 21);
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+.aviso-questao-nao-respondida{
+    background-color: transparent;
+    border: 1px dotted rgb(205, 236, 26);
+    color: rgb(207, 226, 38);
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 8vh;
+}
+footer p{
+    font-family: sans-serif;
+}
+
+
+@media  screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    header h1{
+        font-size: 40px;
+    }
+    .div-perguntas p{
+        font-size: 23px;
+    }
+}
