@@ -19,10 +19,10 @@ Um projeto simples de quiz feito com HTML, CSS e JavaScript. O objetivo é testa
 
 quiz/
 │
-├── index.html # Página principal com as perguntas
-├── style.css # Estilos do quiz
-├── script.js # Script para validar as respostas
-└── README.md # Documentação do projeto
+── index.html # Página principal com as perguntas
+── style.css # Estilos do quiz
+── script.js # Script para validar as respostas
+── README.md # Documentação do projeto
 
 
 ## ✅ Perguntas Incluídas
